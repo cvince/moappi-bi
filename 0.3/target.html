@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html class="csstransforms no-csstransforms3d csstransitions  csstransforms3d" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/widgets-desktop.css"  rel="stylesheet">
+<!--  		<link rel="stylesheet/css" type="text/css" href="./css/widgets-desktop.css" rel="stylesheet">-->
+	<link href="./css/tiles-base.css" rel="stylesheet"/>
+	<link href="./css/tiles-desktop.css" media="screen and (min-width: 960px)" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<link href="./css/tiles-desktop.css" rel="stylesheet"/>
+<![endif]-->	
+    <link href="./css/tiles-tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)" rel="stylesheet"/>
+    <link href="./css/tiles-mobile-landscape.css" media="screen and (min-width: 480px) and (max-width: 767px)" rel="stylesheet"/>
+    <link href="./css/tiles-mobile-landscape.css" media="screen and (max-width: 479px)" rel="stylesheet"/>
+
+    <link href="./css/demo.css" rel="stylesheet"/>    
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
+    <script src="./js/transforms.js"></script>
+    <script src="./js/demo.js"></script>
+    <script src="./js/jquery.ba-resize.min.js"></script>         
+</head>
+
+<script>
+
+var targetMax = 120;
+var targetMin = 0;
+var targetTarget = 60;
+var targetValue = 70;
+
+</script>
+
+<style>
+
+
+</style>
+
+<div class="dimensionSelector">
+<form>
+    <select id="widthSelector">
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>                                
+    </select>
+    x
+    <select id="heightSelector">
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>         
+    </select>
+</form>
+</div>
+
+<div class="isotope-control isotope-has-header">
+	<div class="isotope-header"><div>Single Value</div></div>
+    <div class="container width8">
+		<div class="isotope-control isotope-no-header">
+		    <div id="demoContainer" class="container">
+			    <div class="box stepA"> 	
+			        <div class="targetWidget">       	
+						<div class="targetBarWrapper">		
+							<div class="targetBarTarget"><div class="targetBarTargetLabel">Target</div></div>
+							<div class="targetBarValue"></div>
+							<div class="targetScale">
+							<div class="targetScaleRuler">0</div><div class="targetScaleRuler">60</div><div class="targetScaleRuler">120</div>
+							</div>						
+						</div>		
+			        </div>
+			    </div>          
+		    </div>
+		</div>
+<!-- 		<div class="isotope-control isotope-no-header">		
+ -->		    <div class="container width1 height1">
+				<div class="box stepX">
+					<div class="targetFigure">
+					$60
+					</div>
+				</div>
+		    </div>
+		    <div class="container width1 height1">
+				<div class="box stepX">
+					<div class="targetFigure">
+					$70
+					</div>
+				</div>
+		    </div>
+		</div>		    			
+	</div>
+</div>
+
+</html>

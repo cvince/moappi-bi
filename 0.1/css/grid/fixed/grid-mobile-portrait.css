@@ -1,0 +1,38 @@
+        body {
+            background-color:red;
+        }
+        
+        .isotope-column-size {
+            width:140px;
+            display:none;
+        }
+        
+        /* ------------------- width's -----------------------*/
+        .isotope-control .width1 {
+            width:130px;
+        }
+        
+        /* includes padding */
+        .isotope-control .width2 {
+            width:270px;
+        }
+        
+        /* includes padding */
+        .isotope-control .width3 {
+            width:410px;
+        }
+
+        /* ------------------- height's -----------------------*/
+        .isotope-control .height1 {
+            height:130px;
+        }
+        
+        /* includes padding */
+        .isotope-control .height2 {
+            height:270px;
+        }
+        
+        /* includes padding */
+        .isotope-control .height3 {
+            width:410px;
+        }

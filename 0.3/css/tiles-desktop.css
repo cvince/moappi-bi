@@ -1,0 +1,117 @@
+        
+        /* ------------------- max window sizing -----------------------*/
+        .content {max-width:1040px;}
+        
+        /* ------------------- tile column size -----------------------*/
+        .isotope-column-size {
+            width:72px;
+        }
+        
+        .isotope-control {
+            margin:5px;
+        }
+        
+        /* ------------------- tile header size -----------------------*/
+        .isotope-header {
+            font-size:0.8em;
+            height:20px;
+            border-bottom:3px solid gray;
+        }
+
+        /* ------------------- width -----------------------*/
+        .isotope-control .width1 { width: 62px; }
+        .isotope-control .width2 { width: 134px; }
+        .isotope-control .width3 { width: 206px; }
+        .isotope-control .width4 { width: 278px; }
+        .isotope-control .width5 { width: 350px; }
+        .isotope-control .width6 { width: 422px; }
+        .isotope-control .width7 { width: 494px; }
+        .isotope-control .width8 { width: 566px; }
+        .isotope-control .width9 { width: 638px; }
+        .isotope-control .width10 { width: 710px; }
+        .isotope-control .width11 { width: 782px; }
+        .isotope-control .width12 { width: 854px; }
+        .isotope-control .width13 { width: 926px; }
+        .isotope-control .width14 { width: 998px; }
+
+        /* ------------------- height (w header, no header) -----------------------*/
+        .isotope-has-header .height1 { height: 42px; }
+        .isotope-has-header .height2 { height: 109px; }
+        .isotope-has-header .height3 { height: 176px; }
+        .isotope-has-header .height4 { height: 243px; }
+        .isotope-has-header .height5 { height: 310px; }
+        .isotope-has-header .height6 { height: 377px; }
+        .isotope-has-header .height7 { height: 444px; }
+        .isotope-has-header .height8 { height: 511px; }
+        .isotope-has-header .height9 { height: 578px; }
+        .isotope-has-header .height10 { height: 645px; }
+        .isotope-has-header .height11 { height: 712px; }
+        .isotope-has-header .height12 { height: 779px; }
+        .isotope-has-header .height13 { height: 846px; }
+        .isotope-has-header .height14 { height: 913px; }
+
+        .isotope-no-header .height1 { height: 62px; }
+        .isotope-no-header .height2 { height: 129px; }
+        .isotope-no-header .height3 { height: 196px; }
+        .isotope-no-header .height4 { height: 263px; }
+        .isotope-no-header .height5 { height: 330px; }
+        .isotope-no-header .height6 { height: 397px; }
+        .isotope-no-header .height7 { height: 464px; }
+        .isotope-no-header .height8 { height: 531px; }
+        .isotope-no-header .height9 { height: 598px; }
+        .isotope-no-header .height10 { height: 665px; }
+        .isotope-no-header .height11 { height: 732px; }
+        .isotope-no-header .height12 { height: 799px; }
+        .isotope-no-header .height13 { height: 866px; }
+        .isotope-no-header .height14 { height: 933px; }
+
+        /* ------------------- font size ----------------------*/
+        .isotope-control .width1 .font-small { font-size: 0.8em; }
+        .isotope-control .width2 .font-small { font-size: 1em; }
+        .isotope-control .width3 .font-small { font-size: 1.2em; }
+        .isotope-control .width4 .font-small { font-size: 1.4em; }
+        .isotope-control .width5 .font-small { font-size: 1.6em; }
+        .isotope-control .width6 .font-small { font-size: 1.8em; }
+        .isotope-control .width7 .font-small { font-size: 2em; }
+        .isotope-control .width8 .font-small { font-size: 2.2em; }
+        .isotope-control .width9 .font-small { font-size: 2.4em; }
+        .isotope-control .width10 .font-small { font-size: 2.6em; }
+        .isotope-control .width11 .font-small { font-size: 2.8em; }
+        .isotope-control .width12 .font-small { font-size: 3em; }
+        .isotope-control .width13 .font-small { font-size: 3.2em; }
+        .isotope-control .width14 .font-small { font-size: 3.4em; }
+        
+        .isotope-control .width1 .font-med { font-size: 1.5em; }
+        .isotope-control .width2 .font-med { font-size: 1.7em; }
+        .isotope-control .width3 .font-med { font-size: 1.9em; }
+        .isotope-control .width4 .font-med { font-size: 2.1em; }
+        .isotope-control .width5 .font-med { font-size: 2.3em; }
+        .isotope-control .width6 .font-med { font-size: 2.5em; }
+        .isotope-control .width7 .font-med { font-size: 2.7em; }
+        .isotope-control .width8 .font-med { font-size: 2.9em; }
+        .isotope-control .width9 .font-med { font-size: 3.1em; }
+        .isotope-control .width10 .font-med { font-size: 3.3em; }
+        .isotope-control .width11 .font-med { font-size: 3.5em; }
+        .isotope-control .width12 .font-med { font-size: 3.7em; }
+        .isotope-control .width13 .font-med { font-size: 3.9em; }
+        .isotope-control .width14 .font-med { font-size: 4.1em; }
+
+        .isotope-control .width1 .font-large { font-size: 2em; }
+        .isotope-control .width2 .font-large { font-size: 2.2em; }
+        .isotope-control .width3 .font-large { font-size: 2.4em; }
+        .isotope-control .width4 .font-large { font-size: 2.6em; }
+        .isotope-control .width5 .font-large { font-size: 2.8em; }
+        .isotope-control .width6 .font-large { font-size: 3em; }
+        .isotope-control .width7 .font-large { font-size: 3.2em; }
+        .isotope-control .width8 .font-large { font-size: 3.4em; }
+        .isotope-control .width9 .font-large { font-size: 3.6em; }
+        .isotope-control .width10 .font-large { font-size: 3.8em; }
+        .isotope-control .width11 .font-large { font-size: 4em; }
+        .isotope-control .width12 .font-large { font-size: 4.2em; }
+        .isotope-control .width13 .font-large { font-size: 4.4em; }
+        .isotope-control .width14 .font-large { font-size: 4.6em; }
+
+
+
+
+ 

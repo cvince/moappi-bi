@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+
+    <!-- Head -->
+    <head> 
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        
+        <!-- media style fix -->
+        <script src="../js/respond.min.js"></script>
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+          
+        <!-- jQuery Mobile-->
+        <!-- we recommend using jquery mobile to help your web app look and feel like a mobile app -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="../css/jqm-docs.css" />
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        
+        <!-- Tiling Styles -->
+        <link href="../css/tiles/v9/tiles-base.css" rel="stylesheet"/>
+        
+        <link href="../css/tiles/v9/tiles-desktop.css" media="screen and (min-width: 960px)" rel="stylesheet"/>
+        <link href="../css/tiles/v9/tiles-tablet.css" media="screen and (min-width: 768px) and (max-width: 959px)" rel="stylesheet"/>
+        <link href="../css/tiles/v9/tiles-mobile-landscape.css" media="screen and (min-width: 480px) and (max-width: 767px)" rel="stylesheet"/>
+        <link href="../css/tiles/v9/tiles-mobile-portrait.css" media="screen and (max-width: 479px)" rel="stylesheet"/>
+        
+        <!-- Isotope for tiling -->
+        <script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+
+        <!-- json2html-->
+        <script type="text/javascript" src="../js/jquery.json2html-3.1-min.js"></script> 
+
+        <!-- moappi api -->
+        <script type="text/javascript" src="http://static.moappi.com/js/moappi.api-0.0.8.js"></script> 
+        
+        <!-- moappi bi v9-->
+        <link rel="stylesheet" type="text/css" href="../css/mobile-core.css" />
+        <script type="text/javascript" src="../js/v9/mobile-core.js"></script> 
+        <script type="text/javascript" src="../js/v9/mobile-core-grid.js"></script>
+        <script type="text/javascript" src="../js/v9/mobile-core-console.js"></script>
+        
+        <!--moappi bi components -->
+        <script type="text/javascript" src="../js/v9/controls/base.js"></script> <!-- Load base first! -->
+        <script type="text/javascript" src="../js/v9/controls/single.js"></script>
+        <script type="text/javascript" src="../js/v9/controls/target.js"></script>
+
+        <script type="text/javascript" src="../js/helper.js"></script> 
+    </head> 
+    
+    <div class='isotope-column-size'></div>
+    
+    <body id='pages'></body>
+
+    <script type="text/javascript">
+
+        var pages = {
+        'default-page':{'id':'default-page',
+            'type':'default',
+            'title':'Single Value Demo',
+            'color':'white',
+            'back':undefined,
+            'home':undefined,
+            'next':undefined,
+            'layout': {
+                'type':'grid',
+                'tiles':[
+                    {'id':'default-single','header':'Single Value','background':'white','sizing':{'default':'preview','selected':undefined,'preview':{'height':2,'width':2}}},
+                    {'id':'default-target','header':'Target','background':'white','sizing':{'default':'preview','selected':undefined,'preview':{'height':2,'width':2}}}
+                ],
+                'transform':undefined
+            },
+            'controls':{
+                'singleValue':{
+                    'type':'single',
+                    'parent':'default-single',
+                    'link':{'type':'none'},
+                    'options':{'label':'im here','prefix':'$','suffix':'K','format':{'up':{'color':'#a5dad2'},'down':{'color':'#f56e4e'}}},
+                    'data':[{'type':'static','data':[{"Date":"Oct 2012","Target":12000,"Actual":8784,"Metric":"Basic Premium","Trend":"down"}],'map':{'value':'Actual','label':'Date','trend':'Trend'},'refresh':1}]
+                },
+                'target':{
+                    'type':'target',
+                    'parent':'default-target',
+                    'link':{'type':'none'},
+                    'options':{},
+                    'data':[{'type':'static','data':[{"val":50}],'map':{'actual':'val'},'refresh':1}]
+                }
+            }}
+        };       
+        
+        //Setup the moappi api
+        var api = new moappi.api('../modules/');
+        
+        //Set the logging to use web
+        core.console.method = 'console.log';
+        
+        //Load the core mobile library
+        core.load(pages,{'container':'#pages','defaultPage':'default-page'},true);
+     </script>
+</html>
