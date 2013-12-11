@@ -56,12 +56,12 @@ $(document).ready(function() {
 
 				//			1.2.2 TARGET WIDGET					//
 
-		$(".stepA .targetWidget").css({"width":stepAw+"px", "height":stepAh*0.6+"px", "margin-left":stepAw*-0.5+"px", "margin-top":stepAh*-0.3+"px"})
-		$(".stepA .targetBarWrapper").css({"width":stepAw-30+"px"});
-		$(".targetBarTarget").css({"left":100*targetTarget/targetMax+"%"});
-		$(".targetBarValue").css({"width":100*targetValue/targetMax+"%"});
+		// $(".stepA .targetWidget").css({"width":stepAw+"px", "height":stepAh*0.6+"px", "margin-left":stepAw*-0.5+"px", "margin-top":stepAh*-0.3+"px"})
+		// $(".stepA .targetBarWrapper").css({"width":stepAw-30+"px"});
+		// $(".targetBarTarget").css({"left":100*targetValue/targetMax+"%"});
+		// $(".targetBarValue").css({"width":100*targetValue/targetMax+"%"});
 
-		$(".targetScaleRuler").css({"width":(stepAw-30)/scaleSteps+"px"})
+		// $(".targetScaleRuler").css({"width":(stepAw-30)/scaleSteps+"px"})
 
 	});
 });
